@@ -20,8 +20,8 @@ Il affiche ensuite les résultats dans la console
 # Faire marcher le programme
 ## Configurer les sources
 Pour pouvoir faire marcher le programme, il faut créer un dossier "twitter" puis adapter le chemin de lecture et d'ecriture :
--ligne 20 de Twitter_Stream_Recorder.scala
--ligne 18 de DAU_MAU.scala
+* ligne 20 de Twitter_Stream_Recorder.scala
+* ligne 18 de DAU_MAU.scala
 
 Par exemple "/home/gregoire/twitter" pour moi
 
