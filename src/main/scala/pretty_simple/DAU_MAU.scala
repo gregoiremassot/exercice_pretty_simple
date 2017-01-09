@@ -1,9 +1,5 @@
 package pretty_simple
 
-/**
-  * Illustrates flatMap + countByValue for wordcount.
-  */
-
 import org.apache.spark.sql.SparkSession
 
 object DAU_MAU
