@@ -3,7 +3,7 @@
 
 Ce micro-batch se connecte à l'API de twitter (via twitter4j) et enregistre les événements (ici les tweets) avec Spark Streaming.
 Les tweets sont stockés dans une table csv ayant le schéma suivant :
-utilisateur,année,mois,jour,heure,minute,seconde
+utilisateur,année,mois,jourSemaine,heure,minute,seconde
 
 NB : Le flux de tweets que l'on enregistre est limité à environ 1000tweets/minute par l'API
 
@@ -11,7 +11,7 @@ Cette partie du programme est inspirée du cours ["Mastering Spark for Structure
 
 ##DAU_MAU.scala
 
-Ce batch spark va ensuite calculer des indicateurs DAU et MAU, à une échelle de temps miniature pour faciliter les tests.
+Ce batch Spark va ensuite calculer des indicateurs DAU et MAU, à une échelle de temps miniature pour faciliter les tests.
 * jour->seconde 
 * mois-> minute
 
@@ -38,6 +38,9 @@ sbt run
 à la racine du projet puis taper "2" pour choisir le main de Twitter_Stream_Recorder
 Laisser l'enregistrement tourner pendant une petite minute.
 Ctrl+C pour arreter l'enregistrement
+
+On obtient 1 dossier par seconde, chaque dossier contenant les tweets enregistrés à ce moment là. Par exemple à 7h18 et 16s
+![alt text](https://github.com/gregoiremassot/exercice_pretty_simple/blob/master/screenshot2.png)
 
 ## Afficher le DAU et le MAU
 
