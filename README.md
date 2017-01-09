@@ -55,7 +55,7 @@ Le DAU filtré sur la seconde 10 et le MAU filtré sur la minute 4 vont s'affich
 ![alt text](https://github.com/gregoiremassot/exercice_pretty_simple/blob/master/screenshot.png "Le DAU et le MAU s'affichent à l'écran")
 
 
-Il est possible de modifier ces paramètres lignes 19 et 23 respectivement de dans DAU_MAU.scala
+Il est possible de modifier ces paramètres.
 
 
 
