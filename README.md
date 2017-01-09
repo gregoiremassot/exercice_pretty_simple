@@ -40,6 +40,7 @@ Laisser l'enregistrement tourner pendant une petite minute.
 Ctrl+C pour arreter l'enregistrement
 
 On obtient 1 dossier par seconde, chaque dossier contenant les tweets enregistrés à ce moment là. Par exemple à 7h18 et 16s
+
 ![alt text](https://github.com/gregoiremassot/exercice_pretty_simple/blob/master/screenshot2.png)
 
 ## Afficher le DAU et le MAU
