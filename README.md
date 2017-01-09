@@ -12,8 +12,8 @@ Cette partie du programme est inspirée du cours ["Mastering Spark for Structure
 ##DAU_MAU.scala
 
 Ce batch spark va ensuite calculer des indicateurs DAU et MAU, à une échelle de temps miniature pour faciliter les tests.
-jour->seconde 
-mois-> minute
+* jour->seconde 
+* mois-> minute
 
 Il affiche ensuite les résultats dans la console
 
@@ -32,14 +32,23 @@ sbt assembly
 ```
 ## Enregistrer les tweets avec Spark Streaming
 
-sbt run et taper "2" pour choisir le main de Twitter_Stream_Recorder
+```shell
+sbt run
+```
+à la racine du projet puis taper "2" pour choisir le main de Twitter_Stream_Recorder
 Laisser l'enregistrement tourner pendant une petite minute.
 Ctrl+C pour arreter l'enregistrement
 
 ## Afficher le DAU et le MAU
 
-sbt run et taper "2" pour choisir le main de DAU_MAU
+
+```shell
+sbt run
+```
+puis taper "1" pour choisir le main de DAU_MAU
 Le DAU filtré sur la seconde 10 et le MAU filtré sur la minute 4 vont s'afficher.
+
+Il est possible de modifier ces paramètres lignes 19 et 23 respectivement de dans DAU_MAU.scala
 
 
 
